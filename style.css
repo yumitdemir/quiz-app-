@@ -1,0 +1,63 @@
+
+.active{
+    opacity: 100 !important;
+    pointer-events: all !important;
+}
+
+.disable{
+    pointer-events: none;
+}
+.card{
+    overflow: hidden;
+}
+
+#start-btn, #question-card,#finish-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#question-card, #finish-card{
+    width: 550px;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.card-body ul li:hover{
+    cursor: pointer;
+    background-color: rgb(241, 197, 51);
+}
+
+
+
+.correct{
+    background-color: aquamarine;
+    
+}
+
+.wrong{
+    background-color: rgb(255, 64, 0);
+}
+
+#nextbtn,#finishbtn{
+    opacity: 0;
+    pointer-events: none;
+}
+#finishbtn{
+    position: absolute;
+    right:5%;
+}
+
+#timer-line{
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 0%;
+    background-color: rgb(241, 197, 51);
+    
+}
